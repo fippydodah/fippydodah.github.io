@@ -46,6 +46,7 @@ $border: #000000;
 
 // Define text colors
 $heading: #4b648a;
+$heading-alt: #fefefe;
 $text: #050A44;
 
 /*
@@ -631,7 +632,82 @@ footer {
 
 /*
     -------------------------------
-    ----- 8. Project Styles -----
+    ----- 8. Certification Styles -----
+    -------------------------------
+*/
+
+#certifications {
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid $border;
+    text-align: center;
+
+    h2 {
+        color: $heading-alt;
+        margin-bottom: 50px;
+    }
+}
+
+.cert-block {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid $border;
+
+    text-align: center h3 {
+        font-weight: 500;
+        margin: 0 0 12px 0;
+        color: #000000;
+        text-align: center;
+    }
+
+    span {
+        color: $text;
+        /* no float; keep centered layout */
+    }
+
+    h4 {
+        color: $text;
+        clear: both;
+        font-weight: 500;
+        margin: 0 0 15px 0;
+    }
+
+    p,
+    ul {
+        margin: 0;
+        color: $text;
+        font-size: 0.9em;
+    }
+
+    ul {
+        padding: 0 0 0 15px;
+    }
+}
+
+/* Certifications: badges row under the title */
+.cert-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+/* Size badges consistently; override per-badge if needed */
+.cert-badge,
+.cert-badges img {
+    height: 200px;
+    /* reduced default size */
+    width: auto;
+    max-width: 400px;
+    /* guard against overly wide images */
+    display: block;
+}
+
+/*
+    -------------------------------
+    ----- 9. Project Styles -----
     -------------------------------
 */
 
@@ -641,7 +717,7 @@ footer {
     text-align: center;
 
     h2 {
-        color: #ffff;
+        color: $heading;
         margin-bottom: 50px;
     }
 }
@@ -698,7 +774,7 @@ footer {
 
 /*
     -------------------------------
-    ----- 9. Skills Styles -----
+    ----- 10. Skills Styles -----
     -------------------------------
 */
 
@@ -707,7 +783,7 @@ footer {
     text-align: center;
 
     h2 {
-        color: #000000;
+        color: $heading-alt;
         margin-bottom: 50px;
     }
 
